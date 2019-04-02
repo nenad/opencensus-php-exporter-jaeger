@@ -95,7 +95,7 @@ class JaegerExporter implements ExporterInterface
      * @param SpanData $spans
      * @return bool
      */
-    public function export(array $spans)
+    public function export(array $spans): bool
     {
         if (empty($spans)) {
             return false;
